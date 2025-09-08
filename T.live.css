@@ -1,0 +1,108 @@
+:root{
+    --bg:#0d0d0d; --panel:#1c1c1c; --panel2:#222; --text:#f5f5f5; --muted:#bbb;
+    --accent:#ff8800; --border:#2a2a2a;
+}
+body{
+    margin:0;background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI',system-ui,Arial
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1a1a1a;
+    padding:14px 22px;
+    border-bottom:1px solid #333;
+    position:sticky;
+    top:0;
+    z-index:10
+}
+.navbar h2{
+    margin:0;
+    color:var(--accent);
+    font-size:1.25rem
+}
+.nav-links a{
+    color:#ddd;
+    text-decoration:none;
+    margin-left:16px;
+    padding:8px 12px;
+    border-radius:6px
+}
+.nav-links a:hover{
+    background:var(--accent);
+    color:#fff
+}
+.wrap{
+    max-width:1000px;
+    margin:24px auto;
+    padding:0 16px
+}
+.card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:12px;
+    box-shadow:0 0 14px rgba(255,136,0,.15);
+    padding:18px;margin-bottom:20px
+}
+.card h3{
+    margin:0 0 12px;
+    color:var(--accent)
+}
+.row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap
+}
+.input{
+    flex:1 1 280px;background:var(--panel2);
+    border:1px solid var(--border);
+    color:var(--text);padding:10px 12px;
+    border-radius:8px
+}
+.btn{
+    background:var(--accent);
+    border:none;
+    color:#fff;
+    padding:10px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s
+}
+.btn.alt{
+    background:#333
+}
+.btn:hover{
+    opacity:.85}
+.hint{
+    color:var(--muted);
+    font-size:.9rem
+}
+video{
+    width:100%;
+    background:#000;
+    border-radius:10px;
+    border:1px solid #333
+}
+.students-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:14px;margin-top:12px
+}
+.student-card{
+    background:var(--panel2);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:10px;text-align:center
+}
+.student-card h4{
+    margin:6px 0;
+    color:var(--accent);
+    font-size:.95rem
+}
+.student-video{
+    width:100%;
+    border-radius:8px
+}

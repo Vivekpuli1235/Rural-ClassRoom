@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Space</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h2>Student Space</h2>
+  <div class="nav-links">
+    <a href="#recorded"> Sessions</a>
+    <a href="#materials"> Materials</a>
+    <a href="#quizzes"> Quizzes</a>
+    <a href="#discussion"> Discussion</a>
+    <a href="/student_live.html"> Join Live</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </div>
+</div>
+
+<div class="content">
+  <div class="card" id="recorded">
+    <h3> Recorded Sessions</h3>
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+
+  <div class="card" id="materials">
+    <h3> Study Materials</h3>
+    <div class="material-list" id="materialList"></div>
+  </div>
+  <div class="card" id="Announcements">
+    <h3>Announcements</h3>
+    <div class="Announcements-list" id="Announcements-list"></div>
+  </div>
+<div class="card live-card student-live animate">
+  <h3> Live Classes</h3>
+  <p>Join and watch your teacher’s live class instantly.</p>
+  <button class="btn pulse" onclick="window.location.href='student_live.html'">Watch Live Session</button>
+</div>
+  <div class="card" id="quizzes">
+    <h3>Quizzes</h3>
+    <p>Take short quizzes to test your knowledge. (Coming soon)</p>
+  </div>
+
+  <div class="card" id="discussion">
+    <h3> Discussion Board</h3>
+    <p>Join discussions with peers and teachers. (Coming soon)</p>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+<script src="student.js"></script>
+
+</body>
+</html>

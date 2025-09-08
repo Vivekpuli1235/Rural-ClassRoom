@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Space</title>
+<link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+<div class="navbar">
+  <h2>Teacher Space</h2>
+  <div class="nav-links">
+    <a href="#upload"> Upload</a>
+    <a href="#resources"> Resources</a>
+    <a href="#announcements"> Announcements</a>
+    <a href="/teacher_live.html"> Live Class</a>
+    <button id="themeToggleBtn" aria-label="Toggle dark/light theme">☀️MODE</button>
+    <a href="#" id="logoutBtn">Logout</a>
+  </div>
+</div>
+
+<div class="content">
+  <div class="card live-card teacher-live animate">
+    <h3> Live Classes</h3>
+    <p>Start a live session for your students in real time.</p>
+    <button class="btn pulse" onclick="window.location.href='teacher_live.html'"> Go Live</button>
+  </div>
+  <div class="card" id="upload">
+    <h3>Upload Content</h3>
+    <div class="upload-section">
+      <div class="upload-box">
+<h4>Upload PPT</h4>
+<input type="text" id="pptLink" placeholder="Enter PPT Link">
+<input type="text" id="pptTitle" placeholder="Enter Title">
+<button id="uploadPPTbtn">Upload</button>
+</div>
+
+<div class="upload-box">
+<h4>Upload PDF</h4>
+<input type="text" id="pdfLink" placeholder="Enter PDF Link">
+<input type="text" id="pdfTitle" placeholder="Enter Title">
+<button id="uploadPDFbtn">Upload</button>
+</div>
+
+      <div class="upload-box">
+        <h4>Upload Notes</h4>
+        <input type="file" id="notesFile" accept=".doc,.docx,.txt">
+        <input type="text" id="notesTitle" placeholder="Enter Title">
+        <button id="uploadNotes">Upload</button>
+      </div>
+
+      <div class="upload-box">
+        <h4>Paste Video Link</h4>
+        <input type="text" id="videoLink" placeholder="Enter YouTube link">
+        <input type="text" id="videoTitle" placeholder="Enter Video Title">
+        <input type="text" id="videoThumbnail" placeholder="Enter Thumbnail URL">
+        <button id="uploadVideoBtn">Upload Video</button>
+      </div>
+
+      <div class="upload-box">
+        <h4>Post Announcement</h4>
+        <textarea id="announcementText" placeholder="Enter announcement" rows="4" style="width:90%; margin-top:10px;"></textarea>
+        <button id="postAnnouncement">Post</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card" id="resources">
+    <h3>Uploaded Resources</h3>
+    <div class="resource-list" id="resourceList"></div>
+  </div>
+
+  <div class="card" id="announcements">
+    <h3>Announcements</h3>
+    <div class="resource-list" id="announcementList"></div>
+  </div>
+</div>
+ 
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+<script src="teacher.js"></script>
+</body>
+</html>

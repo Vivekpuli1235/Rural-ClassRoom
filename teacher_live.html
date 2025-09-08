@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RuralConnect • Teacher Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="T.live.css">
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h2>Teacher • Live Portal</h2>
+    <div class="nav-links">
+      <a href="/teacher_portal.html">⬅ Back to Teacher Site</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="card">
+      <h3>Start Class</h3>
+      <div class="row">
+        <button id="btnCreate" class="btn">Create Room</button>
+        <button id="btnShare" class="btn alt" disabled>Share Screen</button>
+        <button id="btnEnd" class="btn alt" disabled>End Stream</button>
+      </div>
+      <p class="hint" id="status">Click "Create Room" to start streaming.</p>
+      <p class="hint">Room ID: <b id="roomId">—</b></p>
+    </div>
+
+    <div class="card">
+      <h3>Preview (Your Camera/Screen)</h3>
+      <video id="localVideo" autoplay playsinline muted controls></video>
+    </div>
+
+    <div class="card">
+      <h3>Students Joined</h3>
+      <div id="students" class="students-grid">
+        <p class="hint">No students connected yet.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+  <script src="t_live.js">
+  </script>
+</body>
+</html>

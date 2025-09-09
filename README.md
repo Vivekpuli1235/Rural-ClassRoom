@@ -40,14 +40,14 @@ RuralConnect is a web platform designed to **bridge the educational gap in rural
 ## 📂 Project Structure  
 
 RuralConnect/
--│── index.html # Landing page
--│── teacher.html # Teacher portal (live + resources)
--│── student.html # Student portal (join class)
--│── style.css # Styles
--│── teacher.js # Teacher logic
--│── student.js # Student logic
--│── content.js # Resource sharing logic
--│── README.md # Documentation
+│── index.html # Landing page
+│── teacher.html # Teacher portal (live + resources)
+│── student.html # Student portal (join class)
+│── style.css # Styles
+│── teacher.js # Teacher logic
+│── student.js # Student logic
+│── content.js # Resource sharing logic
+│── README.md # Documentation
 
 
 

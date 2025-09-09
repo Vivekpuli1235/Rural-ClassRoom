@@ -5,8 +5,7 @@
 # 🌐 RuralConnect – Empowering Rural Education  
 #Link :https://ruralconnectclassrooms.netlify.app/
 
-![Status](https://img.shields.io/badge/Status-Prototype-orange)  
-![Hackathon](https://img.shields.io/badge/Hackathon-Project-blue)  
+![Status](https://ruralconnectclassrooms.netlify.app/)   
 ![Tech](https://img.shields.io/badge/Powered%20By-Firebase%20%26%20WebRTC-yellow)  
 ![License](https://img.shields.io/badge/License-MIT-green)  
 
